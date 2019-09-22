@@ -33,3 +33,6 @@ Internal reporting tool for a newspaper website that generates a report using th
 ## Report
 ![Output image](Output.png)
 
+## Technical Note
+Materialized views & faster queries etc. were designed, tested and recorded in `optimized.py`. See comments in the file for more info. They are deliberately not used because they require periodic upkeep which doesn't add much value for an internal reporting tool.
+
