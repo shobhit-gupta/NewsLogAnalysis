@@ -10,13 +10,13 @@ Internal reporting tool for a newspaper website that generates a report using th
     3. Clone vagrant setup files from [Udacity's Github](https://github.com/udacity/fullstack-nanodegree-vm).
     4. Change to `vagrant` directory.
         1. Whatever you add here would be accessible from VM in it's `/vagrant` directory.
-    5. Start/Build VM: ```console foo@bar:~$ vagrant up```
-    6. Connect to VM: ```console foo@bar:~$ vagrant ssh```
+    5. Start/Build VM: ```zsh foo@bar:~$ vagrant up```
+    6. Connect to VM: ```zsh foo@bar:~$ vagrant ssh```
 2. Clone this project & navigate to the project directory.
 3. Download & unzip the [database](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
     1. You may use `wget` or `curl` to download the database file directly on VM.
-3. Load the database: ```console foo@bar:~$ psql -d news -f newsdata.sql```.
-4. Generate the report: ```console foo@bar:~$ python log_analysis.py```
+3. Load the database: ```zsh foo@bar:~$ psql -d news -f newsdata.sql```.
+4. Generate the report: ```zsh foo@bar:~$ python log_analysis.py```
 
 ## Report
 ![Output image](Output.png)
