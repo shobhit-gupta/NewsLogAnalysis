@@ -11,24 +11,24 @@ Internal reporting tool for a newspaper website that generates a report using th
     4. Change to `vagrant` directory.
         1. Whatever you add here would be accessible from VM in it's `/vagrant` directory.
     5. Start/Build VM: 
-    ```shell 
-    $ vagrant up
-    ```
+        ```shell 
+        $ vagrant up
+        ```
     6. Connect to VM: 
-    ```shell 
-    $ vagrant ssh
-    ```
+        ```shell 
+        $ vagrant ssh
+        ```
 2. Clone this project & navigate to the project directory.
 3. Download & unzip the [database](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
     1. You may use `wget` or `curl` to download the database file directly on VM.
-3. Load the database: 
-```shell 
-$ psql -d news -f newsdata.sql
-```
-4. Generate the report: 
-```shell 
-$ python log_analysis.py
-```
+4. Load the database: 
+    ```shell 
+    $ psql -d news -f newsdata.sql
+    ```
+5. Generate the report: 
+    ```shell 
+    $ python log_analysis.py
+    ```
 
 ## Report
 ![Output image](Output.png)
